@@ -1,0 +1,83 @@
+
+.MessageDash{
+    height: 100vh;
+    width:96vw;
+    overflow: hidden;
+    background: #EAECF3;
+}
+.MessageHeader{
+    background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 12px 24px;
+width: 100%;
+height: 65px;
+border-bottom: 1px solid #EAECF3;
+
+}
+.LocalTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.LocalTime .hour{
+width: 94px;
+height: 24px;
+font-style: normal;
+font-weight: 274;
+font-size: 20px;
+line-height: 24px;
+color: #1C1F26;
+}
+.LocalTime .date{
+height: 24px;
+font-style: normal;
+font-weight: 510;
+font-size: 20px;
+line-height: 24px;
+color: #1C1F26;
+
+}
+.MessageButtom{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin: 0 uto;
+height: 41px;
+}
+.MessageButtom .CreateNew{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 7px 16px;
+width: 107px;
+height: 36px;
+background: #1C1F26;
+border-radius: 8px;
+color: aliceblue;
+
+}
+.MessageButtom .Searchbar{
+width: 320px;
+height: 36px;
+background: #F6F7FB;
+border-radius: 8px;
+border: none;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #BEC1CE;
+
+}
+.MessageButtom .user{
+display: flex;
+align-items: flex-start;
+gap: 10px;
+height: 41px;
+}
