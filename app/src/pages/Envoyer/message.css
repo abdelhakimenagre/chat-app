@@ -2,6 +2,7 @@
 .MessageDash{
     height: 100vh;
     width:96vw;
+    display: flex;
     overflow: hidden;
     background: #EAECF3;
 }
@@ -13,7 +14,7 @@ justify-content: space-between;
 align-items: center;
 padding: 12px 24px;
 width: 100%;
-height: 65px;
+height: 10vh;
 border-bottom: 1px solid #EAECF3;
 
 }
@@ -41,43 +42,287 @@ line-height: 24px;
 color: #1C1F26;
 
 }
-.MessageButtom{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin: 0 uto;
-height: 41px;
-}
-.MessageButtom .CreateNew{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 7px 16px;
-width: 107px;
-height: 36px;
-background: #1C1F26;
-border-radius: 8px;
-color: aliceblue;
+  /* Conversations */
+.Conversations {
+    width: 20vw;
+    height:100%;
+    background: white;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+    border-right: 1px solid #00000011;
+  }
+  .Conversations::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+  }
+  .Conversations::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 4px;
+  }
+  .Conversations::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 4px;
+  }
+  .Conversations::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering */
+  }
+  .user-profile {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 8px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #818592;
+  }
+  .user-profile.active {
+    color: #000000;
+    background-color: #f5f6fa;
+  }
+  .user-initials {
+    background-color: #f5f6fa;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    border-radius: 20%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .user-details {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 1vh;
+  }
+  .user-details .name {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .user-details .name-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .user-details .email {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 510;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .user-details .timestamp {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+    
+    font-style: italic;
+  }
+  .user-details .signature {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .Conversations .Searchbar {
+    width: 24vw;
+    height: 36px;
+    background: #f6f7fb;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    margin: 3%;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 4%;
+  }
+  /* Messages Content */
+  .MessagesContent {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  .email-container {
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  .email-header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  }
+  .email-name {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .email-address {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  .email-timestamp {
+    color: #888;
+    font-size: 12px;
+    align-self: end;
+    margin: 8px 0;
+  }
+  .email-section {
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+   padding: 10px;
+   
+  }
+  .email-section.left{
+    border-top-left-radius: 0px;
+    background-color: whitesmoke;
+  }
+  .email-section.right{
+    align-self: end;
+    border-top-right-radius: 0px;
+    background-color: 	#dcf8c6;
+  }
+  .email-greeting {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+  .email-body {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .email-attachment {
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c5282;
+  }
+  .MessageButtom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    margin: 0 uto;
+    height: 41px;
+  }
+ .CreateNew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 36px;
+    background: #1c1f26;
+    border-radius: 8px;
+    color: aliceblue;
+    margin-right: 10px;
+  }
+.Searchbar {
+    width: 320px;
+    height: 36px;
+    background: #f6f7fb;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #bec1ce;
+  }
+  .messages_Body{
+    height: 80vh;
+    overflow-y: scroll;
+    background-color: #fafafa;
+  }
+  .MessageButtom .user {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    height: 41px;
+  }
+  .ActiveContact .header {
+    width: 15vw;
+    border: #000000 1px solid;
+    height: 100vh;
+  }
+  .MessageInput {
+    border: 1px solid #5a5959b6;
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    height: 15vh;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 85vh;
+    margin-left: 2%;
+    border-radius: 10px;
+  }
+  #attachement {
+    display: none;
+  }
+  #images {
+    display: none;
+  }
+  .buttons{
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    justify-content: space-between;
+  }
+  #messageSender {
+    align-items: center;
+    gap: 10px;
+    padding: 1vw;
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  #buttonsend {
+    width: 10%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #5492df;
+    color: white;
+  }
 
-}
-.MessageButtom .Searchbar{
-width: 320px;
-height: 36px;
-background: #F6F7FB;
-border-radius: 8px;
-border: none;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #BEC1CE;
-
-}
-.MessageButtom .user{
-display: flex;
-align-items: flex-start;
-gap: 10px;
-height: 41px;
-}
+  
+  

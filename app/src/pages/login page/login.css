@@ -1,0 +1,132 @@
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(68, 68, 68);
+    height: 100vh;
+  
+}
+h1{
+    text-align: center;
+}
+
+.login section {
+    margin: 50px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+
+.login .link{
+    background: none;
+    border: none;
+    color: rgb(90, 90, 167);   
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0  ;     
+}
+
+.btn_login{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 50px;
+    width: 14vw;
+    padding: 0.5rem;
+    border: none;
+    align-self: center;
+    color: #fff;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.905);
+}
+
+.login input{
+    font-family: 'Nunito', sans-serif;
+    width: 25vw;
+    border: none; 
+    padding: 0.25rem;
+    border-bottom: 1px solid blue;
+    
+   
+}
+.login input:focus {
+    outline: none;
+    border: none; /* Optional: removes any border */
+}
+
+
+.login label,
+button {
+  margin-top: 20px;
+}
+
+.login button {
+  padding: 0.5rem;
+
+ 
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background:crimson;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.ofscren {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+    
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+    
+}
+
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}

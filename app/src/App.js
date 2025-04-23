@@ -1,13 +1,13 @@
-import './App.css';
-import Sidebar from './component/sideBare/sidebar';
-import Navigation from './Navigation/Navigation';
+import "./App.css";
+import Navigation from "./Navigation/Navigation";
+import { Provider } from "react-redux";
+import store from "./store/store";
 
 function App() {
   return (
- 
-      
-<Navigation/>
-    
+    <Provider store={store}>
+      <Navigation />
+    </Provider>
   );
 }
 
